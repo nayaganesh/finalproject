@@ -103,89 +103,98 @@
         }
 
         footer {
-            background-color: Black;
-            padding: 10px;
-            text-align: center;
-        }
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
 
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            color:white;
-        }
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .footer-box {
-            padding: 10px;
-        }
+.footer-box {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+	item-align:center;
+}
 
-        .main-content {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            max-width: 800px;
-        }
+.footer-box h3 {
+    margin-top: 0;
+}
 
-        .socials, .subscription {
-            flex: 1;
-            padding: 0 10px;
-        }
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
 
-        .social-icons {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
+.footer-box ul li {
+    margin: 5px 0;
+}
 
-        .social-icons a {
-            text-decoration: none;
-            color: #555;
-            font-size: 30px;
-            transition: color 0.3s ease;
-        }
+.footer-box ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+	
+}
 
-        .social-icons a:hover {
-            color: #f1baec;
-        }
+.footer-box ul li a:hover {
+    color: #f1baec;
+}
 
-        .social-icons a i {
-            transition: transform 0.3s ease;
-        }
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
-        .social-icons a:hover i {
-            transform: rotate(360deg);
-        }
+.social-icons a {
+    text-decoration: none;
+    color: #555;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
 
-        .subscription form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.social-icons a:hover {
+    color: #f1baec;
+}
 
-        .subscription input[type="email"],
-        .subscription button {
-            width: 100%;
-            margin: 5px 0;
-            padding: 10px;
-            font-size: 16px;
-        }
+.subscription form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-        .subscription button {
-            background-color: #ffffff;
-            border: none;
-            cursor: pointer;
-        }
+.subscription input[type="email"],
+.subscription button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 16px;
+}
 
-        .subscription button:hover {
-            background-color: #f1baec;
-        }
+.subscription button {
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
 
-        .copyright {
-            margin-top: 20px;
-            font-size: 0.9em;
-        }
+.subscription button:hover {
+    background-color: #f1baec;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 
         @media (max-width: 768px) {
             .footer-content {
@@ -237,29 +246,44 @@
         </div>
     </div>
     <footer>
-        <div class="footer-content">
-            <div class="footer-box">
-                <div class="socials">
-                    <h3>Follow us on:</h3>
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
+    <div class="footer-content">
+        <div class="footer-box">
+            <div class="socials">
+                <h3>Follow us on:</h3>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            <div class="footer-box subscription">
-                <h2>Weekly Book Recommendation</h2>
-                <p>Get weekly updates</p>
-                <form>
-                    <input type="email" placeholder="Email" required>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2024 www.nepalibook.com. All rights reserved.</p>
+        <div class="footer-box subscription">
+            <h2>Weekly Book Recommendation</h2>
+            <p>Get weekly updates</p>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-    </footer>
+        <div class="footer-box contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: info@nepalibook.com</p>
+            <p>Phone: +977-1-1234567</p>
+            <p>Address: Kathmandu, Nepal</p>
+        </div>
+        <div class="footer-box quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 www.nepalibook.com. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
