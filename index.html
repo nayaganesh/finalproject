@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>Discover Award-Winning Nepali Book</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-heading {
+            flex: 1;
+            text-align: center;
+            font-family: cursive;
+            font-size: 1.5em;
+            margin: 0;
+            color: black;
+        }
+
+        .year-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .year-dropdown button {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .year-dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .year-dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .year-dropdown-content a:hover {
+            background-color: #ffffff;
+        }
+
+        .year-dropdown:hover .year-dropdown-content {
+            display: block;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            flex: 1 1 20%;
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box:hover img {
+            transform: scale(1.1);
+        }
+
+        .justified-text {
+            text-align: justify;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-box {
+            padding: 10px;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .socials, .subscription {
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: #555;
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #f1baec;
+        }
+
+        .social-icons a i {
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover i {
+            transform: rotate(360deg);
+        }
+
+        .subscription form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .subscription input[type="email"],
+        .subscription button {
+            width: 100%;
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .subscription button {
+            background-color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .subscription button:hover {
+            background-color: #f1baec;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="main-heading">Discover Award-Winning Nepali Book here!</h1>
+        <div class="year-dropdown">
+            <button class="dropbtn">Years</button>
+            <div class="year-dropdown-content">
+               <a href="cards 2019/index.html" target="_blank">2019</a>
+            <a href="cards 2020/index.html" target="_blank">2020</a>
+            <a href="cards 2021/index.html" target="_blank">2021</a>
+            <a href="cards 2022/index.html" target="_blank">2022</a>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box">
+            <a href="cards%202019/index.html">
+                <img src="agni.png" alt="Agni">
+            </a>
+        </div>
+        <div class="box">
+            <a href="cards%202020/index.html">
+                <img src="aithan.png" alt="Aithan">
+            </a>
+        </div>
+        <div class="box">
+            <a href="cards%202021/index.html">
+                <img src="limbuwan.png" alt="Limbuwan">
+            </a>
+        </div>
+        <div class="box">
+            <a href="cards%202022/index.html">
+                <img src="maharani.png" alt="Maharani">
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box full-width-box">
+            <h3>Nepal's highest Literary Award: Madan Puraskar</h3>
+            <p class="justified-text">The <a href="https://madanpuraskar.org" target="_blank">Madan Puraskar</a> Guthi is a highly esteemed literary award presented annually in Nepal. It celebrates outstanding books written in the Nepali language, published within the same calendar year. Awarded by the Madan Puraskar Guthi, this accolade is considered the most prestigious literary honor in Nepal. The award ceremony takes place every year on the auspicious day of Ghatasthapana, alongside the Jagadamba Shree Puraskar. The Madan Puraskar Pustakalaya (MPP) is the principal archive of books, periodicals, ephemera, including many other collections in the Nepali language. Since over five decades of establishment, it has been continuously engaged in collection and archiving of published materials in Nepali language. The personal literary acquisitions of a Kathmandu schoolboy during the mid 1940s, later became the Madan Puraskar Pustakalaya in 1955 A.D. As the personal collection grew, it attracted gifts from several literary personalities, scholars and institutions of Nepal and India. The library now holds a unique collection of monographs, periodicals and ephemera which describes different aspects of Nepalese society, culture, history and Nepali literature of different periods. The library collection is rich in rare materials, which are very vulnerable for circulation. It is unique and different from usual libraries. The collections comprises newsletters, posters, pamphlets, banners, calendars, manuscripts, reports, manifestos, letters, sketches, photographs, negatives, film-footage, speeches, press releases, images of wall paintings, invitations, audio-records etc. In 1956, the collection received an endowment from Rani Jagadamba Kumari Devi Rana. Madan Puraskar Pustakalaya was officially registered in 1985, under Organizations Registration Act of 1977. The foundations of the Library were even more secure when in 1986, it was gifted land and a building worth over NRs 10 million (about US$ 200,000) by that schoolboy, Kamal Mani Dixit (1929 AD – 2016AD), founder Chairman of the Library. Since 2017, Kanak Mani Dixit is Chair of the library. The main objectives of the library are to collect, preserve, catalog, and disseminate the information for the researchers or scholars. Hence, cataloguing of monographs and periodicals, and preservation of rare and endangered materials using microfilming and digitization are some of the regular activities of the library. The library also manages two of Nepal’s most prestigious literary prizes, the Madan Puraskar and the Jagadamba Shree.</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box">
+                <div class="socials">
+                    <h3>Follow us on:</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box subscription">
+                <h2>Weekly Book Recommendation</h2>
+                <p>Get weekly updates</p>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 www.nepalibook.com. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

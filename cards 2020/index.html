@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan Puraskar Nominees and Winner 2020</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #f0f0f0;
+            padding: 3px;
+            text-align: center;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+            background-color: #f0f0f0;
+            padding: 3px;
+            font-size: 2rem;
+            margin-top: 5px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            height: 400px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 1s;
+        }
+
+        .card img:hover {
+            transform: scale(1.09);
+        }
+
+        .card .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .card .caption a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .winner {
+            border: 10px solid gold;
+            box-shadow: 0 0 15px gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Madan Puraskar Nominees and Winner 2020</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <a href="https://thuprai.com/book/eklavyako-debre-haat/" target="_blank">
+                <img src="Ekalabya.jpg" alt="Ekalabya">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/eklavyako-debre-haat/" target="_blank">Ekalabya - Giri Shreesh Magar</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://thuprai.com/book/philingo" target="_blank">
+                <img src="Filingo.jpeg" alt="Filingo">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/philingo" target="_blank">Filingo - Prabha Baral</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://thuprai.com/book/phulange/" target="_blank">
+                <img src="Fulange.jpg" alt="Fulange">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/phulange/" target="_blank">Fulange - Lekhnath Chettri</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://thuprai.com/book/kariya/" target="_blank">
+                <img src="Kariya.jpg" alt="Kariya">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/kariya/" target="_blank">Kariya - Krishna Abiral</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://thuprai.com/book/kalpa-grantha/" target="_blank">
+                <img src="Kalpa.jpg" alt="Kalpa">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/kalpa-grantha/" target="_blank">Kalpa - Kumar Nagarkoti</a>
+            </div>
+        </div>
+        
+        <div class="card winner">
+            <a href="#" target="_blank">
+                <img src="Limbuwan.jpg" alt="Limbuwan">
+            </a>
+            <div class="caption">
+                <a href="#" target="_blank">Limbuwan - Bhagiraj Ingnam</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://thuprai.com/book/mokshabhumi" target="_blank">
+                <img src="Mokshabhumi.jpg" alt="Mokshabhumi">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/mokshabhumi" target="_blank">Mokshabhumi</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://www.nepaliexpert.com/book/nrityakshar-bigyan" target="_blank">
+                <img src="Nrityakshar.jpg" alt="Nrityakshar">
+            </a>
+            <div class="caption">
+                <a href="https://www.nepaliexpert.com/book/nrityakshar-bigyan" target="_blank">Nrityakshar - Bhairab Bahadur Thapa</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <a href="https://thuprai.com/book/ramite/" target="_blank">
+                <img src="Ramite.jpg" alt="Ramite">
+            </a>
+            <div class="caption">
+                <a href="https://thuprai.com/book/ramite/" target="_blank">Ramite</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

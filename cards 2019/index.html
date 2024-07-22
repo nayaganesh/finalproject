@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madan Puraskar Nominees and Winner 2019</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #f0f0f0;
+            padding: 3px;
+            text-align: center;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        h1 {
+            color: black;
+            background-color: #f0f0f0;
+            padding: 3px;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+            padding: 5px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            width: 400px;
+            height: 400px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 1s;
+        }
+
+        .card img:hover {
+            transform: scale(1.09);
+        }
+
+        .card .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .card .caption a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .winner {
+            border: 10px solid gold;
+            box-shadow: 0 0 15px gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Madan Puraskar Nominees and Winner 2019</h1>
+    </div>
+
+    <div class="grid-container">
+        <div class="card">
+            <a href="https://booksmandala.com/books/dharsai-dharsako-chakrabyuha-35597" target="_blank">
+                <img src="dharsai.jpg" alt="Dharsai">
+                <div class="caption">
+                    <a href="https://booksmandala.com/books/dharsai-dharsako-chakrabyuha-35597" target="_blank">Dharsai Dharsako Chakrabyuha</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://booksmandala.com/books/jokerko-banduk-19959" target="_blank">
+                <img src="jokerko.jpg" alt="Jokerko">
+                <div class="caption">
+                    <a href="https://booksmandala.com/books/jokerko-banduk-19959" target="_blank">Jokerko Banduk</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://thuprai.com/book/maharasanighantu/" target="_blank">
+                <img src="Maharasanighantu.jpg" alt="Maharasanighantu">
+                <div class="caption">
+                    <a href="https://thuprai.com/book/maharasanighantu/" target="_blank">Maharasanighantu</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://booksmandala.com/books/mohapath-mahapatha-18582" target="_blank">
+                <img src="mohapath.jpg" alt="Mohapath">
+                <div class="caption">
+                    <a href="https://booksmandala.com/books/mohapath-mahapatha-18582" target="_blank">Mohapath</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://booksmandala.com/books/parityakta-9190" target="_blank">
+                <img src="parityakta.jpg" alt="Parityakta">
+                <div class="caption">
+                    <a href="https://booksmandala.com/books/parityakta-9190" target="_blank">Parityakta</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card">
+            <a href="https://thuprai.com/book/yaatrama/" target="_blank">
+                <img src="yatrama.jpg" alt="Yatrama">
+                <div class="caption">
+                    <a href="https://thuprai.com/book/yaatrama/" target="_blank">Yatrama</a>
+                </div>
+            </a>
+        </div>
+
+        <div class="card winner">
+            <a href="https://thuprai.com/book/mahaaraani/" target="_blank">
+                <img src="maharani.jpg" alt="Maharani">
+                <div class="caption">
+                    <a href="https://thuprai.com/book/mahaaraani/" target="_blank">WINNER</a>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
