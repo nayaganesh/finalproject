@@ -159,12 +159,25 @@
     color: #555;
     font-size: 30px;
     transition: color 0.3s ease;
+	transition:transform;
 }
 
 .social-icons a:hover {
     color: #f1baec;
+	transform:rotate(360deg);
+}
+@keyframes rotateOnce {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
+.social-icons a:hover i {
+    animation: rotateOnce 1s ease-in-out;
+}
 .subscription form {
     display: flex;
     flex-direction: column;
